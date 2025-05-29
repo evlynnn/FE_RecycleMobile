@@ -1,3 +1,5 @@
+import 'package:recycle_mobile/screens/acceptedItemsScreen.dart';
+import 'package:recycle_mobile/screens/homepageScreen.dart';
 import 'package:recycle_mobile/screens/howToUseScreen.dart';
 import 'package:recycle_mobile/screens/landingScreen.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const ScanBarcodeScreen(),
+      home: const AcceptedItemsScreen(),
     );
   }
 }

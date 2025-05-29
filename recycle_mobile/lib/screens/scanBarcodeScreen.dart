@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:recycle_mobile/util/colors.dart';
 import 'package:recycle_mobile/screens/rulesScreen.dart';
+import 'package:recycle_mobile/screens/acceptedItemsScreen.dart'; // Import the AcceptedItemsScreen
 import 'dart:async';
 
 class ScanBarcodeScreen extends StatefulWidget {
@@ -109,7 +110,11 @@ class _ScanBarcodeScreenState extends State<ScanBarcodeScreen> {
                   ),
                   GestureDetector(
                     onTap: () {
-                      // Handle next action
+                      print("object");
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(builder: (context) => AcceptedItemsScreen()),
+                      );
                     },
                     child: CircleAvatar(
                       radius: 30,
